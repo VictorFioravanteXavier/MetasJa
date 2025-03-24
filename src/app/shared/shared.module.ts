@@ -4,13 +4,15 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { RouterModule } from '@angular/router';
 import { FooterComponent } from './footer/footer.component';
+import { Error404Component } from './error404/error404.component';
 
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    Error404Component
   ],
   imports: [
     CommonModule,
@@ -18,7 +20,8 @@ import { FooterComponent } from './footer/footer.component';
   ],
   exports: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    Error404Component
   ]
 })
 export class SharedModule { }

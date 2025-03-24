@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="376.0308" height="131.792" viewBox="0 0 376.0308 131.792">
+	<defs>
+		<linearGradient id="linearGradient5517130606" gradientTransform="matrix(381.891 0 0 231 0 0)" gradientUnits="userSpaceOnUse" x1="0" y1="0.5" x2="1" y2="0.5">
+			<stop offset="0" stop-color="rgb(59, 130, 246)"/>
+			<stop offset="1" stop-color="rgb(99, 102, 241)"/>
+		</linearGradient>
+	</defs>
+	<path transform="matrix(1 0 0 1 -4.63623 -52.1084)" d="M4.63611 159.379L4.63611 132.396L58.1176 55.0088L101.667 55.0088L50.1635 132.396L30.3881 126.464L127.947 126.464L127.947 159.379L4.63611 159.379ZM69.9828 181L69.9828 159.379L71.2572 126.464L71.2572 107.216L111.203 107.216L111.203 181L69.9828 181Z" fill-rule="nonzero" fill="url(#linearGradient5517130606)"/>
+	<defs>
+		<linearGradient id="linearGradient9755782974" gradientTransform="matrix(381.891 0 0 231 0 0)" gradientUnits="userSpaceOnUse" x1="0" y1="0.5" x2="1" y2="0.5">
+			<stop offset="0" stop-color="rgb(59, 130, 246)"/>
+			<stop offset="1" stop-color="rgb(99, 102, 241)"/>
+		</linearGradient>
+	</defs>
+	<path transform="matrix(1 0 0 1 -4.63623 -52.1084)" d="M190.936 183.9Q174.193 183.9 161.317 176.166Q148.485 168.388 141.19 153.666Q133.895 138.9 133.895 117.982Q133.895 97.1084 141.19 82.3867Q148.485 67.6211 161.317 59.8867Q174.193 52.1084 190.936 52.1084Q207.679 52.1084 220.555 59.8867Q233.431 67.6211 240.726 82.3867Q248.021 97.1084 248.021 117.982Q248.021 138.9 240.726 153.666Q233.431 168.388 220.555 176.166Q207.679 183.9 190.936 183.9ZM190.936 149.843Q195.067 149.843 198.319 146.986Q201.571 144.086 203.46 137.099Q205.35 130.067 205.35 117.982Q205.35 105.766 203.46 98.8223Q201.571 91.8789 198.319 89.0225Q195.067 86.1221 190.936 86.1221Q186.805 86.1221 183.553 89.0225Q180.345 91.8789 178.455 98.8223Q176.566 105.766 176.566 117.982Q176.566 130.067 178.455 137.099Q180.345 144.086 183.553 146.986Q186.805 149.843 190.936 149.843Z" fill-rule="nonzero" fill="url(#linearGradient9755782974)"/>
+	<defs>
+		<linearGradient id="linearGradient2915961686" gradientTransform="matrix(381.891 0 0 231 0 0)" gradientUnits="userSpaceOnUse" x1="0" y1="0.5" x2="1" y2="0.5">
+			<stop offset="0" stop-color="rgb(59, 130, 246)"/>
+			<stop offset="1" stop-color="rgb(99, 102, 241)"/>
+		</linearGradient>
+	</defs>
+	<path transform="matrix(1 0 0 1 -4.63623 -52.1084)" d="M257.356 159.379L257.356 132.396L310.838 55.0088L354.387 55.0088L302.884 132.396L283.108 126.464L380.667 126.464L380.667 159.379L257.356 159.379ZM322.703 181L322.703 159.379L323.977 126.464L323.977 107.216L363.924 107.216L363.924 181L322.703 181Z" fill-rule="nonzero" fill="url(#linearGradient2915961686)"/>
+</svg>
