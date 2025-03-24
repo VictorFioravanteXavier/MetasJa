@@ -94,3 +94,113 @@
         }
     }
 }
+
+
+@media (max-width: 768px) {
+    :host {
+        footer {    
+            #blocos {
+                flex-wrap: wrap;
+                flex-direction: column;
+                gap: rem(20px);
+                justify-content: center;
+
+                #bloco1 {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    max-width: 100%;
+                    gap: rem(20px);
+    
+                    #title-footer {
+                        display: inline-flex;
+                        align-items: center;
+                        gap: rem(10px);
+                        justify-content: center;
+    
+                        h2 {
+
+                            font-weight: bolder;
+                            color: $branco;
+                            font-size: rem(24px);
+                        }
+                    }
+    
+                    p {
+                        font-size: rem(16px);
+                        color: $font_third_color;
+                    }
+                }
+    
+                #bloco2, #bloco3 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+
+
+                    max-width: 100%;
+                    gap: rem(20px);
+    
+                    h3{
+                        font-size: rem(18px);
+                        font-weight: 700;
+                    }
+    
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        gap: rem(10px);
+                        justify-content: center;
+
+    
+                        li{
+                            text-align: center;
+
+                            a{
+                                color: $font_third_color !important;
+                                font-size: rem(16px);
+    
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                #bloco4 {
+                    display: flex;
+                    flex-direction: column;
+                    max-width: 100%;
+                    gap: rem(20px);
+                    justify-content: center;
+ 
+    
+                    h3{
+                        font-size: rem(18px);
+                        font-weight: 700;
+                        text-align: center;
+                    }
+    
+                    ul {
+                        display: flex;
+                        gap: rem(10px);
+                        justify-content: center;
+                        text-align: center;
+
+                    }
+                }
+            }
+    
+            #bottom-footer{
+                margin-top: rem(40px);
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $font_third_color;
+                font-size: rem(14px);
+            }
+        }
+    }
+} 
