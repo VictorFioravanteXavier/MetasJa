@@ -49,6 +49,13 @@ export class LandingPageComponent implements OnInit {
     },
   ]
 
+  public about_tool: Array<string> = [
+    "Formulário simples e rápido",
+    "Categorização inteligente",
+    "Acompanhamento em tempo real",
+    "Edição flexível de metas"
+  ] 
+
   constructor() { }
 
   ngOnInit(): void {
