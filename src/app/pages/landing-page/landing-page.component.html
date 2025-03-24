@@ -34,15 +34,15 @@
 </section>
 
 <section id="sobre-ferramenta">
-    <section class="img" @fadeInRightEnter>
+    <section class="img">
         <img src="assets/imagem_landing-page2.jpg" alt="">
     </section>
-    <section id="informations">
+    <section id="informations" @fadeInRightEnter>
         <h2>
             Interface intuitiva e fácil de usar
         </h2>
         <ul>
-            <li *ngFor="let item of about_tool" @fadeInRightEnter>
+            <li *ngFor="let item of about_tool" >
                 <img src="assets/check.svg" alt="->">
                 <p>{{item}}</p>
             </li>
@@ -55,3 +55,5 @@
     <p>Junte-se a milhares de pessoas realizando suas metas</p>
     <button class="white-btn">Criar conta gratuita</button>
 </section>
+
+<app-footer></app-footer>

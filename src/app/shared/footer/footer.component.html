@@ -1,0 +1,46 @@
+<footer>
+    <section id="blocos">
+        <section id="bloco1">
+            <section id="title-footer">
+                <img src="assets/logo_simbolo_branca.svg" alt="Logo">
+                <h2>MetasJá</h2>
+            </section>
+            <p>
+                Transformando objetivos em conquistas reais
+            </p>
+        </section>
+
+        <section id="bloco2">
+            <h3>Links úteis</h3>
+            <ul>
+                <li *ngFor="let item of links_uteis">
+                    <a [routerLink]="[item.path]">{{item.name}}</a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="bloco3">
+            <h3>Suporte</h3>
+            <ul>
+                <li *ngFor="let item of suporte">
+                    <a [routerLink]="[item.path]">{{item.name}}</a>
+                </li>
+            </ul>
+        </section>
+
+        <section id="bloco4">
+            <h3>Redes sociais</h3>
+            <ul>
+                <li *ngFor="let item of redes_sociais">
+                    <a [routerLink]="[item.path]">
+                        <img [src]="item.icon_img" [alt]="item.site_name">
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </section>
+
+    <section id="bottom-footer">
+        <h4>&copy; 2024 MetasJá. Todos os direitos reservados.</h4>
+    </section>
+</footer>
