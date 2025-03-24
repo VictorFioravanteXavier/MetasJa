@@ -6,7 +6,6 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
   animations: [
-    // Defina a animação fadeInRight
     trigger('fadeInRightEnter', [
       state('void', style({ opacity: 0, transform: 'translate3d(100%, 0, 0)' })),
       transition(':enter', [

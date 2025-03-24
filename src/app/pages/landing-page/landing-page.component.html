@@ -1,7 +1,7 @@
 <app-header></app-header>
 
 <section id="first">
-    <section id="left">
+    <section id="left" @fadeInLeftEnter>
         <h2>
             Transforme seus sonhos em realidade
         </h2>
@@ -14,7 +14,7 @@
     </section>
 
     <section>
-        <img src="/assets/imagem_landing-page1.jpg" alt="Pessoas Felizes Usando o MetasJá">
+        <img src="/assets/imagem_landing-page1.jpg" alt="Pessoas Felizes Usando o MetasJá" @fadeInRightEnter>
     </section>
 </section>
 
@@ -22,7 +22,7 @@
     <h2>Funcionalidades principais</h2>
     <section id="cards">
         <ul>
-            <li *ngFor="let item of funcionalidades">
+            <li *ngFor="let item of funcionalidades; let i = index"  [@fadeIn]="{ value: '', params: { duration: 1000, delay: 750 * i } }">
                 <div class="card" >
                     <img [src]="item.img">
                     <h3>{{item.name}}</h3>
