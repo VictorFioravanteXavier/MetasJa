@@ -1,17 +1,18 @@
 <header>
-    <section id="title">
+    <section id="title" @fadeInLeftEnter>
         <img src="assets/logo_simbolo.svg" alt="MetasJá Simbolo">
         <h1>
             MetasJá
         </h1>
     </section>
 
-
     <nav>
-        <div class="menu-icon" [ngStyle]="{ 'display': !isMobileDevice() ? 'none' : 'flex' }" (click)="showElement()">&#8942;</div>
+        <div class="menu-icon" [ngStyle]="{ 'display': !isMobileDevice() ? 'none' : 'flex' }" (click)="showElement()">
+            &#8942;
+        </div>
 
-        <ul *ngIf="isElementVisible && isMobileDevice()" @fadeInRight @fadeInLeft>
-            <li *ngFor="let item of navegation" >
+        <ul *ngIf="isElementVisible" @fadeInRightEnter @fadeInLeftLeave>
+            <li *ngFor="let item of navegation">
                 <a [routerLink]="[item.path]" class="item">
                     {{item.nome}}
                 </a>

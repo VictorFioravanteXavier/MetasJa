@@ -7,15 +7,21 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
   styleUrls: ['./header.component.scss'],
   animations: [
     // Defina a animação fadeInRight
-    trigger('fadeInRight', [
+    trigger('fadeInRightEnter', [
       state('void', style({ opacity: 0, transform: 'translate3d(100%, 0, 0)' })),
       transition(':enter', [
         animate('1s ease', style({ opacity: 1, transform: '' })),
       ]),
     ]),
-    trigger('fadeInLeft', [
+    trigger('fadeInLeftLeave', [
       state('void', style({ opacity: 0, transform: 'translate3d(-100%, 0, 0)' })),
       transition(':leave', [
+        animate('1s ease', style({ opacity: 1, transform: '' })),
+      ]),
+    ]),
+    trigger('fadeInLeftEnter', [
+      state('void', style({ opacity: 0, transform: 'translate3d(-100%, 0, 0)' })),
+      transition(':enter', [
         animate('1s ease', style({ opacity: 1, transform: '' })),
       ]),
     ]),
