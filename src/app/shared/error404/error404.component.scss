@@ -42,7 +42,6 @@
         gap: rem(10px);
         padding: rem(20px);
 
-
         button{
             width: 20%;
             padding: rem(15px) rem(30px);
@@ -50,6 +49,20 @@
             &.white-btn:hover{
                 text-decoration: underline;
             }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #error2 {
+        img{
+            min-width: 90%;
+        }
+    }
+
+    #error3 {
+        button{
+            width: 100% !important;
         }
     }
 }
