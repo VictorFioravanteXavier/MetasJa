@@ -1,0 +1,10 @@
+.white-btn {
+    font-size: rem(18px);
+    padding: rem(15px) rem(30px);
+    background-color: $branco;
+    color: $azul;
+
+    &:hover{
+        background-color: $branco_hover;
+    }
+}

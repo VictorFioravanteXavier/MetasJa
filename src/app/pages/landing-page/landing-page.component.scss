@@ -65,7 +65,7 @@
                     min-width: 35%;
                     max-width: 35%;
 
-                    .card{
+                    .card {
                         background-color: $branco;
                         padding: rem(40px);
                         display: flex;
@@ -74,16 +74,16 @@
                         border-radius: rem(12px);
                         min-height: 65%;
 
-                        img{
+                        img {
                             align-self: flex-start;
                         }
 
-                        h3{
+                        h3 {
                             font-weight: bold;
                             font-size: rem(24px);
                         }
 
-                        p{
+                        p {
                             color: $font_secundary_color;
                         }
                     }
@@ -92,7 +92,7 @@
         }
     }
 
-    #sobre-ferramenta{
+    #sobre-ferramenta {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -100,41 +100,64 @@
 
         padding: rem(40px) rem(20px);
 
-        .img{
-            img{
+        .img {
+            img {
                 width: rem(600px);
-                height: rem(600px); 
+                height: rem(600px);
             }
         }
 
-        #informations{
+        #informations {
             width: 40%;
             display: flex;
             flex-direction: column;
             gap: rem(30px);
 
-            h2{
+            h2 {
                 font-weight: bold;
                 font-size: rem(30px);
             }
 
-            ul{
+            ul {
                 display: flex;
                 flex-direction: column;
                 gap: rem(15px);
 
-                li{
+                li {
                     display: flex;
                     align-items: center;
                     gap: rem(10px);
 
-                    p{
+                    p {
                         font-size: rem(18px);
                         color: $font_secundary_color;
                     }
                 }
             }
         }
+    }
+
+    #start {
+        background: linear-gradient(45deg, #3B82F6, #2563EB);
+        ;
+        color: $branco;
+        padding: rem(40px) rem(20px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: rem(40px);
+
+        h2 {
+            font-size: rem(36px);
+            font-weight: bold;
+        }
+
+        p {
+            font-size: rem(20px);
+        }
+
+        
     }
 }
 
@@ -159,30 +182,31 @@
 
         #funcionalidades-principais {
             #cards {
-                ul { 
+                ul {
                     flex-wrap: wrap;
+
                     li {
                         min-width: 100%;
                     }
                 }
-             }
+            }
         }
 
-        #sobre-ferramenta{
+        #sobre-ferramenta {
             flex-direction: column;
 
-            .img{
+            .img {
                 margin-bottom: rem(30px);
 
-                img{
+                img {
                     width: rem(350px);
-                    height: rem(350px); 
+                    height: rem(350px);
                 }
             }
-    
-            #informations{
+
+            #informations {
                 width: 100%;
-                
+
             }
         }
     }
