@@ -1,0 +1,42 @@
+@import "~/src/scss/base/variables";
+@import "~/src/scss/assets/rem-calc";
+
+:host{
+    #first{
+        padding: rem(80px) rem(32px);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: rem(50px);
+        flex-wrap: wrap;
+        
+        section{
+            max-width: 36%;
+            display: flex;
+            flex-direction: column;
+            gap: rem(20px);
+            
+
+            h2{
+                font-weight: bold;
+                font-size: rem(48px);
+            }
+
+            p{
+                font-size: rem(20px);
+            }
+
+            button{
+                font-size: rem(18px);
+                align-self: flex-start;
+                padding: rem(15px) rem(30px);
+            }
+        }
+
+        img{
+            width: rem(600px);
+            height: rem(400px);
+        }
+    }
+}
