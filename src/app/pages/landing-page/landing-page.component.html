@@ -1,7 +1,7 @@
 <app-header></app-header>
 
 <section id="first">
-    <section>
+    <section id="left">
         <h2>
             Transforme seus sonhos em realidade
         </h2>
@@ -15,5 +15,20 @@
 
     <section>
         <img src="/assets/imagem_landing-page1.jpg" alt="Pessoas Felizes Usando o MetasJá">
+    </section>
+</section>
+
+<section id="funcionalidades-principais">
+    <h2>Funcionalidades principais</h2>
+    <section id="cards">
+        <ul>
+            <li *ngFor="let item of funcionalidades">
+                <div class="card" >
+                    <img [src]="item.img">
+                    <h3>{{item.name}}</h3>
+                    <p>{{item.text}}</p>
+                </div>
+            </li>
+        </ul>
     </section>
 </section>
