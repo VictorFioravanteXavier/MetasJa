@@ -10,7 +10,7 @@
     <nav>
         <div class="menu-icon" [ngStyle]="{ 'display': !isMobileDevice() ? 'none' : 'flex' }" (click)="showElement()">&#8942;</div>
 
-        <ul *ngIf="isElementVisible">
+        <ul *ngIf="isElementVisible && isMobileDevice()" @fadeInRight @fadeInLeft>
             <li *ngFor="let item of navegation" >
                 <a [routerLink]="[item.path]" class="item">
                     {{item.nome}}

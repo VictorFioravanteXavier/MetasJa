@@ -4,11 +4,10 @@
 :host {
     header {
         padding: rem(20px);
-        border-bottom: 1px solid #F3F4F6;
+        border-bottom: rem(2px) solid #F3F4F6;
         display: flex;
         align-items: center;
         justify-content: space-between;
-
 
         #title {
             display: inline-flex;
@@ -25,7 +24,7 @@
 
         nav {
 
-            .menu-icon{
+            .menu-icon {
                 font-size: rem(23px);
             }
 
@@ -45,20 +44,6 @@
                             text-decoration: underline;
                         }
                     }
-
-                    button {
-                        cursor: pointer;
-
-                        background-color: $azul;
-                        color: $branco;
-                        padding: rem(8px) rem(20px);
-
-                        border-radius: rem(7px);
-
-                        &:hover {
-                            background-color: $azul_hover;
-                        }
-                    }
                 }
             }
         }
@@ -76,5 +61,5 @@
             border-radius: rem(10px);
             background-color: $branco;
         }
-    } 
+    }
 }

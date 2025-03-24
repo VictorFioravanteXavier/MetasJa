@@ -1,9 +1,25 @@
 import { Component, OnInit } from '@angular/core';
+import { trigger, state, style, transition, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
-  styleUrls: ['./header.component.scss']
+  styleUrls: ['./header.component.scss'],
+  animations: [
+    // Defina a animação fadeInRight
+    trigger('fadeInRight', [
+      state('void', style({ opacity: 0, transform: 'translate3d(100%, 0, 0)' })),
+      transition(':enter', [
+        animate('1s ease', style({ opacity: 1, transform: '' })),
+      ]),
+    ]),
+    trigger('fadeInLeft', [
+      state('void', style({ opacity: 0, transform: 'translate3d(-100%, 0, 0)' })),
+      transition(':leave', [
+        animate('1s ease', style({ opacity: 1, transform: '' })),
+      ]),
+    ]),
+  ],
 })
 export class HeaderComponent implements OnInit {
 

@@ -1,0 +1,13 @@
+button {
+    cursor: pointer;
+
+    background-color: $azul;
+    color: $branco;
+    padding: rem(8px) rem(20px);
+
+    border-radius: rem(7px);
+
+    &:hover {
+        background-color: $azul_hover;
+    }
+}
