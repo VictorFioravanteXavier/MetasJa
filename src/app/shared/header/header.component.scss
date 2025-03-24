@@ -1,0 +1,80 @@
+@import "~/src/scss/base/variables";
+@import "~/src/scss/assets/rem-calc";
+
+:host {
+    header {
+        padding: rem(20px);
+        border-bottom: 1px solid #F3F4F6;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        #title {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: rem(10px);
+
+            h1 {
+                font-weight: bolder;
+                color: $azul;
+                font-size: rem(24px);
+            }
+        }
+
+        nav {
+
+            .menu-icon{
+                font-size: rem(23px);
+            }
+
+            ul {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: rem(15px);
+
+                li {
+                    font-size: rem(16px);
+                    cursor: pointer;
+
+                    a {
+                        &:hover {
+                            color: $azul;
+                            text-decoration: underline;
+                        }
+                    }
+
+                    button {
+                        cursor: pointer;
+
+                        background-color: $azul;
+                        color: $branco;
+                        padding: rem(8px) rem(20px);
+
+                        border-radius: rem(7px);
+
+                        &:hover {
+                            background-color: $azul_hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        ul {
+            position: absolute;
+            border: 1px solid #0000006c;
+            flex-direction: column;
+            transform: translate(-107.5px);
+            padding: rem(7.5px);
+            border-radius: rem(10px);
+            background-color: $branco;
+        }
+    } 
+}

@@ -1,0 +1,26 @@
+<header>
+    <section id="title">
+        <img src="assets/logo_simbolo.svg" alt="MetasJá Simbolo">
+        <h1>
+            MetasJá
+        </h1>
+    </section>
+
+
+    <nav>
+        <div class="menu-icon" [ngStyle]="{ 'display': !isMobileDevice() ? 'none' : 'flex' }" (click)="showElement()">&#8942;</div>
+
+        <ul *ngIf="isElementVisible">
+            <li *ngFor="let item of navegation" >
+                <a [routerLink]="[item.path]" class="item">
+                    {{item.nome}}
+                </a>
+            </li>
+            <li>
+                <button [routerLink]="['']">
+                    Começar Agora
+                </button>
+            </li>
+        </ul>
+    </nav>
+</header>
